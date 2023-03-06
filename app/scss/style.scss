@@ -4,5 +4,83 @@
 @import 'global';
 
 
+.header {
+  background-color: #F9FAFF;
+  padding: 60px 0;
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 63px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  &__link {}
+
+  &__list {
+    display: flex;
+  }
+
+  &__bookmark:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+.main {
+  padding-bottom: 120px;
+}
+
+.content {
+
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 66px;
+    color: #FF6838;
+    max-width: 390px;
+
+    &--color {
+      color: #363853;
+    }
+  }
+
+
+  &__text {}
+
+  &__actions {}
+
+  &__link {}
+
+  &__link-more {}
+
+  &__img {
+  }
+
+}
+
+
+
+
+
+
+
 
 @import 'media';
