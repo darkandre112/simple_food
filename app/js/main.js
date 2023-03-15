@@ -1,4 +1,4 @@
-$ (function(){
+$(function () {
 
   $('.header__link').on('click', function () {
     $(this).addClass("header__link--active");
@@ -10,5 +10,6 @@ $ (function(){
     $(".category__btn").not(this).removeClass("category__btn--active");
   });
 
-  var mixer = mixitup('.menu-cards');
+  var mixer = mixitup('.cards');
+
 });

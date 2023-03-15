@@ -1,0 +1,49 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+
+  &__item {
+    padding: 20px 10px;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0 0 0 1px $frame;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    transition: box-shadow 0.4s;
+
+    &:hover {
+      box-shadow: 0 0 0 1px #FF6838;
+      border-radius: 5px;
+    }
+  }
+
+  &__img {
+    margin: 0 auto 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $default;
+    margin-bottom: auto;
+    padding-bottom: 10px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: $default;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
