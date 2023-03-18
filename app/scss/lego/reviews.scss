@@ -1,0 +1,115 @@
+.reviews {
+
+  &__items {
+    position: relative;
+  }
+
+  &__blockquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 52px;
+  }
+
+  &__img {
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+
+  &__inner {
+    max-width: 655px;
+    padding: 0 40px;
+    width: 100%;
+    position: relative;
+  }
+
+  &__text {
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 30px;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('../images/quotes-left.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::after {
+      content: '';
+      width: 24px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 90px;
+      background-image: url('../images/quotes-right.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__cite {
+    font-weight: 500;
+    color: $accent;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__explanation {
+    font-size: 14px;
+  }
+}
+
+.slick-dots button {
+  font-size: 0;
+
+  &::before {
+    width: 15px;
+    height: 15px;
+    background-color: $accent;
+    color: $accent;
+    border-radius: 50%;
+  }
+}
+
+.slick-dots li button:before {
+  height: 15px;
+  width: 15px;
+  bottom: 0;
+}
+
+.slick-dots li {
+  bottom: 0;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  position: absolute;
+  top: 366px;
+  left: 40%;
+
+
+  &::before {
+    font-size: 0;
+  }
+}
+
+.slick-prev {
+  right: 0;
+}
+
+.slick-next {
+  left: 56%;
+}

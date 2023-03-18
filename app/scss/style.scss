@@ -1,8 +1,16 @@
-@import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
+@import 'vars';
 @import 'global';
 
 
-
-@import 'media';
+@import 'lego/header';
+@import 'lego/hero';
+@import 'lego/category';
+@import 'lego/cards';
+@import 'lego/delivery';
+@import 'lego/restaurant';
+@import 'lego/reviews';
+@import 'lego/application';
+@import 'lego/footer';
