@@ -1,12 +1,12 @@
 .footer {
 
-  &__flex {
+  &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, auto);
     padding-bottom: 61px;
   }
 
-  &__form {
+  &__inner {
     max-width: 200px;
   }
 
@@ -19,6 +19,7 @@
   &__logo {
     display: block;
     margin-bottom: 30px;
+    width: fit-content;
   }
 
   &__label {
@@ -51,7 +52,7 @@
 
   }
 
-  &__btn {
+  &__button {
     padding-left: 70px;
     position: relative;
   }
@@ -107,8 +108,14 @@
 
 .address {
 
-  &__item {
+  &__contacts {
     margin-bottom: 15px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
   &__link {

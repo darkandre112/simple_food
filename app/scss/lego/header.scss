@@ -1,10 +1,17 @@
 .header {
   padding: 60px 0;
 
-  &__flex {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: 63px;
   }
 
   &__logo {
@@ -14,10 +21,6 @@
 
   &__menu {
     display: flex;
-  }
-
-  &__item {
-    margin-right: 63px;
   }
 
   &__link {
@@ -51,18 +54,17 @@
     margin-right: 45px;
   }
 
-  &__bookmark:not(:last-child) {
+  &__items:not(:last-child) {
     margin-right: 36px;
   }
 
-  &__link-icon {
+  &__button {
+    position: relative;
+  }
+
+  &__icon {
     width: 19px;
     height: 19px;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    position: relative;
   }
 
   &__number {

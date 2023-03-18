@@ -121,6 +121,16 @@ button {
   }
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    border-radius: 5px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -5,9 +5,9 @@ $(function () {
     $(".header__link").not(this).removeClass("header__link--active");
   });
 
-  $('.category__btn').on('click', function () {
-    $(this).addClass("category__btn--active");
-    $(".category__btn").not(this).removeClass("category__btn--active");
+  $('.category__button').on('click', function () {
+    $(this).addClass("category__button--active");
+    $(".category__button").not(this).removeClass("category__button--active");
   });
 
   var mixer = mixitup('.cards');

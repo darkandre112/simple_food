@@ -11,21 +11,22 @@
   }
 
   &__item {
-    position: relative;
+
 
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
 
-  &__btn {
-    padding: 22px 32px 22px 86px;
+  &__button {
+    padding: 13px 32px 13px 32px;
     box-shadow: 0 0 0 1px $frame;
     background-color: $white;
     color: $title;
     border-radius: 5px;
     transition: background-color 0.4s, box-shadow 0.4s, color 0.4s;
-    position: relative;
+    display: flex;
+    align-items: center;
 
     &:focus {
       box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
@@ -48,8 +49,8 @@
   }
 
   &__icon {
-    position: absolute;
-    left: 32px;
-    bottom: 12px;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
   }
 }
